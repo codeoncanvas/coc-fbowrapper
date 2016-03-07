@@ -6,7 +6,8 @@
 	author="Rene Christen"
 	summary="FBO wrapper util class"
 	license=""
-	git=""
+	url="https://github.com/codeoncanvas/coc-fbowrapper"
+	git="git://github.com/codeoncanvas/coc-fbowrapper.git"
 	version=""
 	library=""
 	>
