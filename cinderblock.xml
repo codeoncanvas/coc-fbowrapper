@@ -7,7 +7,7 @@
 	summary="FBO wrapper util class"
 	license=""
 	url="https://github.com/codeoncanvas/coc-fbowrapper"
-	git="git://github.com/codeoncanvas/coc-fbowrapper.git"
+	git="git@github.com:codeoncanvas/coc-fbowrapper.git"
 	version=""
 	library=""
 	>
