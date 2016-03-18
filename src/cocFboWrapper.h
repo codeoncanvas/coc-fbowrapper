@@ -1,5 +1,6 @@
 #pragma once
 
+#include "cinder/gl/gl.h"
 #include "cinder/gl/Fbo.h"
 #include "cinder/Camera.h"
 
