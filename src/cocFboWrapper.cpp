@@ -1,15 +1,26 @@
-//
-//  cocFboWrapper.cpp
-//  Rutherford
-//
-//  Created by Lukasz Karluk on 8/03/2016.
-//
-//
+/**
+ *
+ *      ┌─┐╔═╗┌┬┐┌─┐
+ *      │  ║ ║ ││├┤
+ *      └─┘╚═╝─┴┘└─┘
+ *   ┌─┐┌─┐╔╗╔┬  ┬┌─┐┌─┐
+ *   │  ├─┤║║║└┐┌┘├─┤└─┐
+ *   └─┘┴ ┴╝╚╝ └┘ ┴ ┴└─┘
+ *
+ * Copyright (c) 2016 Code on Canvas Pty Ltd, http://CodeOnCanvas.cc
+ *
+ * This software is distributed under the MIT license
+ * https://tldrlegal.com/license/mit-license
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code
+ *
+ **/
 
 #include "cocFboWrapper.h"
 
 namespace coc {
-  
+
 FboWrapper::FboWrapper() : isSetup(false) {}
 
 ci::gl::FboRef FboWrapper::getFboRef() { return fbo; }
@@ -73,5 +84,5 @@ void FboWrapper::unbind() {
 }
 
 bool FboWrapper::getIsSetup() { return isSetup; }
-  
+
 };
