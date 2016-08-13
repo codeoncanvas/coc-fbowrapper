@@ -35,9 +35,9 @@ public:
     void setup( glm::vec2 _size, bool _isOrtho = true, bool _hasAlpha = false );
     void setup( glm::vec2 _size, ci::gl::Fbo::Format _fmt, bool _isOrtho = true );
 
-    void draw();
-    void draw( glm::vec2 pos );
-    void draw( ci::Rectf bounds );
+    void draw() const;
+    void draw( glm::vec2 pos ) const;
+    void draw( ci::Rectf bounds ) const;
 
     void bind();
     void unbind();

@@ -41,18 +41,18 @@ void FboWrapper::setup( glm::vec2 _size, ci::gl::Fbo::Format _fmt, bool _isOrtho
     isSetup = true;
 }
 
-void FboWrapper::draw() {
+void FboWrapper::draw() const {
     if (fbo) ci::gl::draw( fbo->getColorTexture());//, fboArea );
 }
 
-void FboWrapper::draw( glm::vec2 pos ) {
+void FboWrapper::draw( glm::vec2 pos ) const {
     if (fbo)
     {
         ci::gl::draw( fbo->getColorTexture(), ci::Rectf( pos.x, pos.y, size.x, size.y ) );
     }
 }
 
-void FboWrapper::draw( ci::Rectf bounds ) {
+void FboWrapper::draw( ci::Rectf bounds ) const {
     if (fbo)
     {
         ci::gl::draw( fbo->getColorTexture(), bounds );
